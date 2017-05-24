@@ -4,11 +4,11 @@ import pyrebase
 from asyncpg import connect, create_pool
 
 DB_CONFIG = {
-    'host': '127.0.0.1',
-    'user': 'postgres',
-    'password': 'tanggallahir1998',
+    'host': 'ec2-54-225-107-107.compute-1.amazonaws.com',
+    'user': 'biesnuithsobir',
+    'password': '900d16de87a2347ec24e483d29c32263e22e29a571e9946b1f54261f5dd3bdea',
     'port': '5432',
-    'database': 'bsm'
+    'database': 'da70ahioc7lvfg'
 }
 
 config = {
@@ -95,4 +95,5 @@ async def signup(request):
     
     #sql = INSERT INTO USERS (NAMA, EMAIL, STATUS) VALUES (nama, email, 'USER');
 
-app.run(port=8080)
+if __name__ == "__main__":
+    app.run()
