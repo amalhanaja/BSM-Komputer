@@ -96,4 +96,4 @@ async def signup(request):
     #sql = INSERT INTO USERS (NAMA, EMAIL, STATUS) VALUES (nama, email, 'USER');
 
 if __name__ == "__main__":
-    app.run(host='https://bsmkomputer.herokuapp.com', port=1337, workers=4)
+    app.run(host='bsmkomputer.herokuapp.com', port=1337, workers=4)
