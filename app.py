@@ -95,4 +95,5 @@ async def signup(request):
     
     #sql = INSERT INTO USERS (NAMA, EMAIL, STATUS) VALUES (nama, email, 'USER');
 
-app.run(port=2000)
+if __name__ == "__main__":
+    app.run()
