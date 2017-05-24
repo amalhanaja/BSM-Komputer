@@ -43,7 +43,7 @@ auth = firebase.auth()
 
 @app.listener('before_server_start')
 async def register_db(app, loop):
-    app.pool = await create_pool(**DB_CONFIG, loop=loop, max_size=100)
+    app.pool = await create_pool(**DB_CONFIG, loop=loop, max_size=20)
 
 @app.route('/login', methods=['POST'])
 async def login(request):
